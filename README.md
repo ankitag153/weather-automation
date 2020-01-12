@@ -8,3 +8,8 @@ How to :
 	Click on the .html file to see the Cucumber Report
 
 
+Bugs Found:
+
+1)	Optional Parameters in Query params for both APIs are not respected. API returns 200 even if the optional parameter values are incorrect
+Example: 
+https://api.weatherbit.io/v2.0/current?lat=562.36969&lon=789.3695&marine=test&units=a&lang=oi&key=f767c102bb874909878729858a9ca968
