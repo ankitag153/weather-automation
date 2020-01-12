@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>test</td>
+            <td>12 Jan 2020, 19:18</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+          <p>The following summary displays scenarios that failed.</p>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+              <div class="elements">
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_examples-weather-postal-postal-feature.html">examples/weather/postal/postal.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.104</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 204/400/403 based on incorrect values - Incorrect marine value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {postal_code:'989900', country:'', marine: 'ys', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.103</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:18:34.573 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?postal_code=989900&amp;country=&amp;marine=ys&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.674 response time in milliseconds: 1100.03
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=989900&amp;country=&amp;marine=ys&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 913
+1 &lt; X-RateLimit-Reset: 1578871708
+{&quot;data&quot;:[{&quot;rh&quot;:94,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:28.9088,&quot;pres&quot;:951,&quot;timezone&quot;:&quot;Europe\/Helsinki&quot;,&quot;ob_time&quot;:&quot;2020-01-12 07:47&quot;,&quot;country_code&quot;:&quot;FI&quot;,&quot;clouds&quot;:98,&quot;ts&quot;:1578815220,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;19&quot;,&quot;city_name&quot;:&quot;Salla&quot;,&quot;wind_spd&quot;:1.79,&quot;last_ob_time&quot;:&quot;2020-01-12T07:47:00&quot;,&quot;wind_cdir_full&quot;:&quot;west-northwest&quot;,&quot;wind_cdir&quot;:&quot;WNW&quot;,&quot;slp&quot;:976,&quot;vis&quot;:5,&quot;h_angle&quot;:-90,&quot;sunset&quot;:&quot;11:55&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:-4.8,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0,&quot;wind_dir&quot;:297,&quot;sunrise&quot;:&quot;08:28&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:24,&quot;lat&quot;:66.9966,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04n&quot;,&quot;code&quot;:&quot;804&quot;,&quot;description&quot;:&quot;Overcast clouds&quot;},&quot;datetime&quot;:&quot;2020-01-12:08&quot;,&quot;temp&quot;:-3.9,&quot;station&quot;:&quot;D3689&quot;,&quot;elev_angle&quot;:-2,&quot;app_temp&quot;:-6.6}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:18:35.675 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_examples-weather-postal-postal-feature.html">examples/weather/postal/postal.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.109</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 204/400/403 based on incorrect values - Incorrect units value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {postal_code:'5577', country:'', marine: '', units:'test', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.106</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:18:34.568 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?postal_code=5577&amp;country=&amp;marine=&amp;units=test&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.671 response time in milliseconds: 1101.77
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=5577&amp;country=&amp;marine=&amp;units=test&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 914
+1 &lt; X-RateLimit-Reset: 1578871708
+{&quot;data&quot;:[{&quot;rh&quot;:73,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:-68.4667,&quot;pres&quot;:934.1,&quot;timezone&quot;:&quot;America\/Argentina\/Mendoza&quot;,&quot;ob_time&quot;:&quot;2020-01-12 07:00&quot;,&quot;country_code&quot;:&quot;AR&quot;,&quot;clouds&quot;:0,&quot;ts&quot;:1578812400,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;13&quot;,&quot;city_name&quot;:&quot;Rivadavia&quot;,&quot;wind_spd&quot;:1.5,&quot;last_ob_time&quot;:&quot;2020-01-12T07:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;east&quot;,&quot;wind_cdir&quot;:&quot;E&quot;,&quot;slp&quot;:1013,&quot;vis&quot;:5,&quot;h_angle&quot;:-90,&quot;sunset&quot;:&quot;23:47&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:17.9,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0,&quot;wind_dir&quot;:90,&quot;sunrise&quot;:&quot;09:38&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:4,&quot;lat&quot;:-33.1833,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Clear sky&quot;},&quot;datetime&quot;:&quot;2020-01-12:07&quot;,&quot;temp&quot;:23,&quot;station&quot;:&quot;SAME&quot;,&quot;elev_angle&quot;:-17.63,&quot;app_temp&quot;:23.3}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>19:18:35.674 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_examples-weather-postal-postal-feature.html">examples/weather/postal/postal.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.104</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 204/400/403 based on incorrect values - incorrect marine,units, language</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {postal_code:'44467', country:'', marine: 'oi', units:'test', lang: 'ws',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.102</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>19:18:34.582 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?postal_code=44467&amp;country=&amp;marine=oi&amp;units=test&amp;lang=ws&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.682 response time in milliseconds: 1099.68
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=44467&amp;country=&amp;marine=oi&amp;units=test&amp;lang=ws&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 911
+1 &lt; X-RateLimit-Reset: 1578871708
+{&quot;data&quot;:[{&quot;rh&quot;:74,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:-80.7558,&quot;pres&quot;:969.4,&quot;timezone&quot;:&quot;America\/New_York&quot;,&quot;ob_time&quot;:&quot;2020-01-12 07:48&quot;,&quot;country_code&quot;:&quot;US&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1578815280,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;OH&quot;,&quot;city_name&quot;:&quot;Niles&quot;,&quot;wind_spd&quot;:14.92,&quot;last_ob_time&quot;:&quot;2020-01-12T07:48:00&quot;,&quot;wind_cdir_full&quot;:&quot;southwest&quot;,&quot;wind_cdir&quot;:&quot;SW&quot;,&quot;slp&quot;:1003.4,&quot;vis&quot;:5,&quot;h_angle&quot;:-90,&quot;sunset&quot;:&quot;22:16&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:10.4,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0,&quot;wind_dir&quot;:230,&quot;sunrise&quot;:&quot;12:47&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:26,&quot;lat&quot;:41.1824,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04n&quot;,&quot;code&quot;:&quot;804&quot;,&quot;description&quot;:&quot;Overcast clouds&quot;},&quot;datetime&quot;:&quot;2020-01-12:07&quot;,&quot;temp&quot;:15,&quot;station&quot;:&quot;E5224&quot;,&quot;elev_angle&quot;:-53.08,&quot;app_temp&quot;:15}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: postal.feature:33 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>19:18:35.682 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

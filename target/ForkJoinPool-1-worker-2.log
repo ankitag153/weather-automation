@@ -1,0 +1,86 @@
+19:18:31.317 karate.env = null 
+19:18:31.319 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:31.320 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:32.110 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=8000&country=CH&marine=t&units=M&lang=de&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:33.384 response time in milliseconds: 1270.77
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:33 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=8000&country=CH&marine=t&units=M&lang=de&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 921
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":92,"pod":"d","lon":8.55,"pres":955.1,"timezone":"Europe\/Zurich","ob_time":"2020-01-12 07:46","country_code":"CH","clouds":93,"ts":1578815160,"solar_rad":19.6,"state_code":"ZH","city_name":"Zürich","wind_spd":1,"last_ob_time":"2020-01-12T07:46:00","wind_cdir_full":"Osten-Südöstlich","wind_cdir":"OSO","slp":1029.1,"vis":5,"h_angle":-67.5,"sunset":"15:58","dni":352.3,"dewpt":-2.3,"snow":0,"uv":2.18424,"precip":0,"wind_dir":113,"sunrise":"07:09","ghi":66.14,"dhi":39.5,"aqi":59,"lat":47.3667,"weather":{"icon":"c04d","code":"804","description":"Bewölkt"},"datetime":"2020-01-12:08","temp":-1.1,"station":"E8728","elev_angle":5.88,"app_temp":-2}],"count":1}
+
+
+19:18:33.402 karate.env = null 
+19:18:33.403 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:33.403 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:33.425 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=110001&country=&marine=&units=I&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:34.544 response time in milliseconds: 1117.68
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:34 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=110001&country=&marine=&units=I&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 917
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":5,"pod":"d","lon":77.2183,"pres":960.9,"timezone":"Asia\/Kolkata","ob_time":"2020-01-12 07:45","country_code":"IN","clouds":27,"ts":1578815100,"solar_rad":623.6,"state_code":"07","city_name":"New Delhi","wind_spd":6.9,"last_ob_time":"2020-01-12T07:45:00","wind_cdir_full":"west-southwest","wind_cdir":"WSW","slp":988.9,"vis":3.1,"h_angle":0,"sunset":"12:14","dni":867.69,"dewpt":-10,"snow":0,"uv":2.07071,"precip":0,"wind_dir":250,"sunrise":"01:44","ghi":629.52,"dhi":106.75,"aqi":275,"lat":28.6369,"weather":{"icon":"c02d","code":"801","description":"Few clouds"},"datetime":"2020-01-12:07","temp":62,"station":"AV350","elev_angle":37.61,"app_temp":62}],"count":1}
+
+
+19:18:34.554 karate.env = null 
+19:18:34.554 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:34.555 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:34.568 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=5577&country=&marine=&units=test&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.671 response time in milliseconds: 1101.77
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=5577&country=&marine=&units=test&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 914
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":73,"pod":"n","lon":-68.4667,"pres":934.1,"timezone":"America\/Argentina\/Mendoza","ob_time":"2020-01-12 07:00","country_code":"AR","clouds":0,"ts":1578812400,"solar_rad":0,"state_code":"13","city_name":"Rivadavia","wind_spd":1.5,"last_ob_time":"2020-01-12T07:00:00","wind_cdir_full":"east","wind_cdir":"E","slp":1013,"vis":5,"h_angle":-90,"sunset":"23:47","dni":0,"dewpt":17.9,"snow":0,"uv":0,"precip":0,"wind_dir":90,"sunrise":"09:38","ghi":0,"dhi":0,"aqi":4,"lat":-33.1833,"weather":{"icon":"c01n","code":"800","description":"Clear sky"},"datetime":"2020-01-12:07","temp":23,"station":"SAME","elev_angle":-17.63,"app_temp":23.3}],"count":1}
+
+
+19:18:35.674 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)
+ equal (Integer)

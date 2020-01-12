@@ -1,0 +1,85 @@
+19:18:31.316 karate.env = null 
+19:18:31.319 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:31.320 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:32.110 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=2000&country=AU&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:33.384 response time in milliseconds: 1270.63
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:33 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=2000&country=AU&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 925
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":77,"pod":"d","lon":151.2077,"pres":1003.1,"timezone":"Australia\/Sydney","ob_time":"2020-01-12 07:55","country_code":"AU","clouds":100,"ts":1578815700,"solar_rad":35,"state_code":"02","city_name":"Milsons Point","wind_spd":2.24,"last_ob_time":"2020-01-12T07:55:00","wind_cdir_full":"south-southwest","wind_cdir":"SSW","slp":1011.3,"vis":5,"h_angle":67.5,"sunset":"09:09","dni":557.71,"dewpt":15.3,"snow":0,"uv":3.43346,"precip":0,"wind_dir":201,"sunrise":"18:56","ghi":175.08,"dhi":62.32,"aqi":143,"lat":-33.8561,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2020-01-12:08","temp":19.4,"station":"D5330","elev_angle":12.53,"app_temp":19.5}],"count":1}
+
+
+19:18:33.405 karate.env = null 
+19:18:33.408 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:33.409 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:33.423 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=AI-2640&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:34.545 response time in milliseconds: 1119.05
+1 < 204
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Date: Sun, 12 Jan 2020 08:18:34 GMT
+1 < Server: openresty/1.11.2.2
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=AI-2640&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 916
+1 < X-RateLimit-Reset: 1578871708
+
+19:18:34.565 karate.env = null 
+19:18:34.566 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:34.570 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:34.582 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=44467&country=&marine=oi&units=test&lang=ws&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.682 response time in milliseconds: 1099.68
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=44467&country=&marine=oi&units=test&lang=ws&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 911
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":74,"pod":"n","lon":-80.7558,"pres":969.4,"timezone":"America\/New_York","ob_time":"2020-01-12 07:48","country_code":"US","clouds":100,"ts":1578815280,"solar_rad":0,"state_code":"OH","city_name":"Niles","wind_spd":14.92,"last_ob_time":"2020-01-12T07:48:00","wind_cdir_full":"southwest","wind_cdir":"SW","slp":1003.4,"vis":5,"h_angle":-90,"sunset":"22:16","dni":0,"dewpt":10.4,"snow":0,"uv":0,"precip":0,"wind_dir":230,"sunrise":"12:47","ghi":0,"dhi":0,"aqi":26,"lat":41.1824,"weather":{"icon":"c04n","code":"804","description":"Overcast clouds"},"datetime":"2020-01-12:07","temp":15,"station":"E5224","elev_angle":-53.08,"app_temp":15}],"count":1}
+
+
+19:18:35.682 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)
+"n","lon":28.9088,"pres":951,"timezone":"Europe\/Helsinki","ob_time":"2020-01-12 07:47","country_code":"FI","clouds":98,"ts":1578815220,"solar_rad":0,"state_code":"19","city_name":"Salla","wind_spd":1.79,"last_ob_time":"2020-01-12T07:47:00","wind_cdir_full":"west-northwest","wind_cdir":"WNW","slp":976,"vis":5,"h_angle":-90,"sunset":"11:55","dni":0,"dewpt":-4.8,"snow":0,"uv":0,"precip":0,"wind_dir":297,"sunrise":"08:28","ghi":0,"dhi":0,"aqi":24,"lat":66.9966,"weather":{"icon":"c04n","code":"804","description":"Overcast clouds"},"datetime":"2020-01-12:08","temp":-3.9,"station":"D3689","elev_angle":-2,"app_temp":-6.6}],"count":1}
+
+
+19:16:02.549 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)

@@ -1,0 +1,85 @@
+19:18:31.317 karate.env = null 
+19:18:31.318 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:31.320 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:32.110 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=7600&country=&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:33.384 response time in milliseconds: 1270.58
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:33 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=7600&country=&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 922
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":82,"pod":"n","lon":-57.55,"pres":1013.8,"timezone":"America\/Argentina\/Buenos_Aires","ob_time":"2020-01-12 07:43","country_code":"AR","clouds":0,"ts":1578814980,"solar_rad":0,"state_code":"01","city_name":"Mar del Plata","wind_spd":1,"last_ob_time":"2020-01-12T07:43:00","wind_cdir_full":"north","wind_cdir":"N","slp":1015,"vis":5,"h_angle":-90,"sunset":"23:08","dni":0,"dewpt":13,"snow":0,"uv":0,"precip":0,"wind_dir":0,"sunrise":"08:41","ghi":0,"dhi":0,"aqi":31,"lat":-38,"weather":{"icon":"c01n","code":"800","description":"Clear sky"},"datetime":"2020-01-12:07","temp":16.1,"station":"F5436","elev_angle":-7.72,"app_temp":16.2}],"count":1}
+
+
+19:18:33.401 karate.env = null 
+19:18:33.401 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:33.402 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:33.422 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=989900&country=&marine=&units=M&lang=zh-tw&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:34.540 response time in milliseconds: 1116.90
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:34 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=989900&country=&marine=&units=M&lang=zh-tw&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 918
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":94,"pod":"n","lon":28.9088,"pres":951,"timezone":"Europe\/Helsinki","ob_time":"2020-01-12 07:47","country_code":"FI","clouds":98,"ts":1578815220,"solar_rad":0,"state_code":"19","city_name":"Salla","wind_spd":1.79,"last_ob_time":"2020-01-12T07:47:00","wind_cdir_full":"西北西北","wind_cdir":"西北西","slp":976,"vis":5,"h_angle":-90,"sunset":"11:55","dni":0,"dewpt":-4.8,"snow":0,"uv":0,"precip":0,"wind_dir":297,"sunrise":"08:28","ghi":0,"dhi":0,"aqi":24,"lat":66.9966,"weather":{"icon":"c04n","code":"804","description":"灰濛蒙雲"},"datetime":"2020-01-12:08","temp":-3.9,"station":"D3689","elev_angle":-2,"app_temp":-6.6}],"count":1}
+
+
+19:18:34.554 karate.env = null 
+19:18:34.554 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+19:18:34.555 config.apiKey = f767c102bb874909878729858a9ca968 
+19:18:34.573 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=989900&country=&marine=ys&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+19:18:35.674 response time in milliseconds: 1100.03
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 12 Jan 2020 08:18:35 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=989900&country=&marine=ys&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 913
+1 < X-RateLimit-Reset: 1578871708
+{"data":[{"rh":94,"pod":"n","lon":28.9088,"pres":951,"timezone":"Europe\/Helsinki","ob_time":"2020-01-12 07:47","country_code":"FI","clouds":98,"ts":1578815220,"solar_rad":0,"state_code":"19","city_name":"Salla","wind_spd":1.79,"last_ob_time":"2020-01-12T07:47:00","wind_cdir_full":"west-northwest","wind_cdir":"WNW","slp":976,"vis":5,"h_angle":-90,"sunset":"11:55","dni":0,"dewpt":-4.8,"snow":0,"uv":0,"precip":0,"wind_dir":297,"sunrise":"08:28","ghi":0,"dhi":0,"aqi":24,"lat":66.9966,"weather":{"icon":"c04n","code":"804","description":"Overcast clouds"},"datetime":"2020-01-12:08","temp":-3.9,"station":"D3689","elev_angle":-2,"app_temp":-6.6}],"count":1}
+
+
+19:18:35.675 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)
