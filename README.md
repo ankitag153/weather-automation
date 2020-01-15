@@ -1,11 +1,21 @@
 # weather
 This project is for automation weather APIs. 
+Since Karate is an open-source Java project, it can run almost anywhere. Here’s my system config:
+
+Windows 10 , 64 Bit OS
+Java 1.8.0_40
+Apache Maven 3.6.1
+Karate 0.9.5.RC5
+Intellij Community Edition
+-- In Intellij IDE, click on Settings> Plugins
+   Download the plugins for   Maven, Gherkin and Cucumber for Java. Restart IDE
+
 How to :
-	Clone the above repository in your local machine
-	Open the project in IntelliJ and right click on project and click : “Build Module : ‘weather-automation”
-	Expand the project on left side and Navigate to src->test->java->examples.weather->current->WeatherRunner. Right click and click on Run WeatherRunner
-	Navigate to your local machine project folder  and check folder “cucumber-html-reports”.
-	Click on the .html file to see the Cucumber Report
+1)	Clone the above repository in your local machine. Maven would start importing some repository. It should import completely and then follow further steps.
+2) Open the project in IntelliJ and right click on project and click : “Build Module : ‘weather-automation”. 
+3) 	Expand the project on left side and Navigate to src->test->java->examples.weather->current->WeatherRunner. Right click and click on Run WeatherRunner
+4)	Navigate to your local machine project folder  and check folder “cucumber-html-reports”. The existing run report is available in target folder
+5)	Click on the .html file to see the Cucumber Report
 
 
 Bugs Found:
