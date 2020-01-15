@@ -2,11 +2,11 @@
 This project is for automation weather APIs. 
 Since Karate is an open-source Java project, it can run almost anywhere. Here’s my system config:
 
-Windows 10 , 64 Bit OS
-Java 1.8.0_40
-Apache Maven 3.6.1
-Karate 0.9.5.RC5
-Intellij Community Edition
+1) Windows 10 , 64 Bit OS
+2) Java 1.8.0_40
+3) Apache Maven 3.6.1
+4) Karate 0.9.5.RC5
+5) Intellij Community Edition
 -- In Intellij IDE, click on Settings> Plugins
    Download the plugins for   Maven, Gherkin and Cucumber for Java. Restart IDE
 
